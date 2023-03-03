@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ege.telli\\source\\repos\\WriteCsv\\WriteCsv\\WriteCsv.csproj",
-      "projectName": "WriteCsv",
-      "projectPath": "C:\\Users\\ege.telli\\source\\repos\\WriteCsv\\WriteCsv\\WriteCsv.csproj",
+      "projectUniqueName": "C:\\Users\\ege.telli\\source\\repos\\WriteCsv\\WriteCsv\\EPEBaraWriter.csproj",
+      "projectName": "EPEBaraWriter",
+      "projectPath": "C:\\Users\\ege.telli\\source\\repos\\WriteCsv\\WriteCsv\\EPEBaraWriter.csproj",
       "packagesPath": "C:\\Users\\ege.telli\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\ege.telli\\source\\repos\\WriteCsv\\WriteCsv\\obj\\",
       "projectStyle": "PackageReference",

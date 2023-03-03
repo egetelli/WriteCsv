@@ -1,0 +1,5 @@
+C:\Users\ege.telli\Desktop\ModbusBaraForm\EPEBaraWriter.exe
+C:\Users\ege.telli\Desktop\ModbusBaraForm\EPEBaraWriter.dll
+C:\Users\ege.telli\Desktop\ModbusBaraForm\EPEBaraWriter.deps.json
+C:\Users\ege.telli\Desktop\ModbusBaraForm\EPEBaraWriter.runtimeconfig.json
+C:\Users\ege.telli\Desktop\ModbusBaraForm\EPEBaraWriter.pdb

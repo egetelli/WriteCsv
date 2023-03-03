@@ -39,7 +39,7 @@ namespace WriteCsv
             {
                 if (c is TextBox)
                 {
-                    c.Text = textBox23.Text;
+                    c.Text = numericUpDown1.Text;
                 }
             }
         }
@@ -48,10 +48,10 @@ namespace WriteCsv
         private void button1_Click(object sender, EventArgs e)
         {
 
-            string theDate = dateTimePicker1.Value.ToString("yyyy-MM-dd hh/mm");
+            string theDate = dateTimePicker1.Value.ToString("yyyy-MM-dd");
             string tarih = dateTimePicker1.Value.ToString("yyyy-MM-dd");
-            string saat = dateTimePicker1.Value.ToString("hh/mm");
-            string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            string saat = dateTimePicker1.Value.ToString("hh.mm");
+            string path = @"C:\Scada\BaraSet";
             StreamWriter writer = new StreamWriter(path + "\\" + theDate + ".csv");
             // Create an instance of the StreamWriter class
             //farklý bi loop denemesi
@@ -118,10 +118,12 @@ namespace WriteCsv
                             // Write each line to the file
                             foreach (string line in lines)
                             {
-                                writer.WriteLine(String.Format("{0},{1},{2}", tarih, saat, Convert.ToDouble(line) * 10));
+                                writer.WriteLine(String.Format("{0},{1}", tarih,Convert.ToDouble(line) * 10));
 
 
                             }
+                            
+                            
                         }
                     }
                 }
@@ -133,6 +135,7 @@ namespace WriteCsv
 
             // Close the file
             writer.Close();
+            MessageBox.Show(@"Csv dosyanýz C:\Scada\BaraSet Klasörüne baþarýyla eklendi!");
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -151,11 +154,16 @@ namespace WriteCsv
 
         }
 
+        private void path()
+        {
+            Directory.CreateDirectory(@"C:\Scada\BaraSet");
+        }
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            path();
             button1.Enabled= false;
-            MessageBox.Show("Lütfen kaydet tuþuna basmadan önce bütün boþluklarý doldurunuz!");
             button1.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, button1.Width, button1.Height, 30, 30));
             button2.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, button2.Width, button2.Height, 30, 30));
             button3.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, button3.Width, button3.Height, 30, 30));

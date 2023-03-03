@@ -1,0 +1,5 @@
+C:\Users\ege.telli\Desktop\Ege\WriteCsv.exe
+C:\Users\ege.telli\Desktop\Ege\WriteCsv.dll
+C:\Users\ege.telli\Desktop\Ege\WriteCsv.deps.json
+C:\Users\ege.telli\Desktop\Ege\WriteCsv.runtimeconfig.json
+C:\Users\ege.telli\Desktop\Ege\WriteCsv.pdb

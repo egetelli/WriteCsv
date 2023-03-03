@@ -42,7 +42,6 @@ namespace WriteCsv
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -80,12 +79,13 @@ namespace WriteCsv
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.textBox23 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.title = new System.Windows.Forms.Label();
             this.textBox24 = new System.Windows.Forms.TextBox();
             this.textBox25 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -219,16 +219,6 @@ namespace WriteCsv
             this.label12.Size = new System.Drawing.Size(58, 17);
             this.label12.TabIndex = 11;
             this.label12.Text = "11 - 12:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox1.Location = new System.Drawing.Point(367, 459);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(57, 24);
-            this.textBox1.TabIndex = 12;
-            this.textBox1.TextChanged += new System.EventHandler(this.buttondisable);
-            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlynumber);
             // 
             // textBox2
             // 
@@ -635,15 +625,6 @@ namespace WriteCsv
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // textBox23
-            // 
-            this.textBox23.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox23.Location = new System.Drawing.Point(147, 565);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(57, 24);
-            this.textBox23.TabIndex = 50;
-            this.textBox23.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlynumber);
-            // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.SteelBlue;
@@ -692,6 +673,29 @@ namespace WriteCsv
             this.textBox25.TextChanged += new System.EventHandler(this.buttondisable);
             this.textBox25.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlynumber);
             // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBox1.Location = new System.Drawing.Point(367, 459);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(57, 24);
+            this.textBox1.TabIndex = 12;
+            this.textBox1.TextChanged += new System.EventHandler(this.buttondisable);
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlynumber);
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.DecimalPlaces = 1;
+            this.numericUpDown1.Location = new System.Drawing.Point(147, 565);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(61, 24);
+            this.numericUpDown1.TabIndex = 54;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -699,11 +703,11 @@ namespace WriteCsv
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(477, 628);
+            this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.textBox25);
             this.Controls.Add(this.textBox24);
             this.Controls.Add(this.title);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.textBox23);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dateTimePicker1);
@@ -755,11 +759,13 @@ namespace WriteCsv
             this.Controls.Add(this.label2);
             this.Font = new System.Drawing.Font("TechnicBold", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "ModbusSetter";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.TextChanged += new System.EventHandler(this.buttondisable);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlynumber);
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -815,10 +821,10 @@ namespace WriteCsv
         private DateTimePicker dateTimePicker1;
         private Button button1;
         private Button button2;
-        private TextBox textBox23;
         private Button button3;
         private Label title;
         private TextBox textBox24;
         private TextBox textBox25;
+        private NumericUpDown numericUpDown1;
     }
 }

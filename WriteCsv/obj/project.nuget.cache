@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pa4HFaDSCJCWo/2LkH3pC9PirUFK2SC7f22WhWESg2TLkJYyNcCbk4rHZLCuMDJDrZj3nduJubm9nB967/OnIQ==",
+  "dgSpecHash": "LkJwbIyIGVKroa+9F2ESCPgoDIbkdSWT5ApfK63axklMQcv4zvU2D8V8g+NcJ/0bGmgINUiQLRMjA06wKU+k6g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ege.telli\\source\\repos\\WriteCsv\\WriteCsv\\WriteCsv.csproj",
+  "projectFilePath": "C:\\Users\\ege.telli\\source\\repos\\WriteCsv\\WriteCsv\\EPEBaraWriter.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
