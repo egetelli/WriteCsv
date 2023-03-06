@@ -130,7 +130,7 @@ namespace WriteCsv
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lütfen Sayı Giriniz");
+                MessageBox.Show("Error"+ ex +"Lütfen Sayı Giriniz");
             }
 
             // Close the file
@@ -183,6 +183,7 @@ namespace WriteCsv
 
         private void onlynumber(object sender, KeyPressEventArgs e)
         {
+
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
                    (e.KeyChar != '.'))
             {
@@ -190,7 +191,7 @@ namespace WriteCsv
             }
 
             // only allow one decimal point
-            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            if ((e.KeyChar == '.') && (((TextBox)sender).Text.IndexOf('.') > -1))
             {
                 e.Handled = true;
             }
